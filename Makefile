@@ -28,7 +28,7 @@ less: $(lessfiles:.less=.css)
 
 %.css: %.less
 	@echo Compiling $<
-	@lessc --yui-compress $< >> ${cssfile}
+	@lessc --clean-css $< >> ${cssfile}
 
 clean:
 	rm -f ${builddir}/${buildname}.js
@@ -38,5 +38,6 @@ clean:
 install:
 	npm install requirejs
 	npm install less
+	npm install less-plugin-clean-css
 
 
