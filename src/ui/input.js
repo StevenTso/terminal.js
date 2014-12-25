@@ -1,6 +1,6 @@
 /**
- * Terminus.js
- * Copyright © 2012 Ramón Lamana
+ * terminal.js
+ * Copyright © 2014 Steven Tso
  */
 define(function(require) {
 
@@ -30,7 +30,7 @@ define(function(require) {
 
 		// DOM elements structure
 		this.$el = document.createElement('div');
-		this.$el.className = 'terminusjs-input';
+		this.$el.className = 'terminaljs-input';
 		this.$el.innerHTML = '';
 
 		if(!!this.settings.editable) {
@@ -91,7 +91,7 @@ define(function(require) {
 		},
 
 		isVisible: function() {
-			return (this.$el.style.display !== 'none') && Util.Styles.hasClass(this.$el, 'terminusjs-box');
+			return (this.$el.style.display !== 'none') && Util.Styles.hasClass(this.$el, 'terminal-box');
 		},
 
 		placeCursorToEnd: function() {

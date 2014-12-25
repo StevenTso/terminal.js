@@ -1,16 +1,16 @@
 /**
- * Terminus.js
- * Copyright © 2012 Ramón Lamana
+ * terminal.js
+ * Copyright © 2014 Steven Tso
  */
 @transitionTime: .2s;
 
-.terminusjs {
+.terminaljs {
 	color: #fff;
 	background-color: #000;
 	font-family: monospace;
 
 	/* Class to support cross-browser flexible box (specs 2009 and 2012) */
-	.terminusjs-box {
+	.terminaljs-box {
 		display: -webkit-box;
 		display: -moz-box;
 		display: -o-box;
@@ -23,12 +23,12 @@
 		display: flex;
 	}
 
-	.terminusjs-box.hidden {
+	.terminaljs-box.hidden {
 		display: none;
 	}
 
 	/* Default stylesheet rules for input and output elements */
-	.terminusjs-prompt {
+	.terminaljs-prompt {
 		clear: both;
 		-webkit-box-orient: horizontal;
 		-moz-box-orient: horizontal;
@@ -42,7 +42,7 @@
 		flex-flow: row
 	}
 
-	.terminusjs-input {
+	.terminaljs-input {
 		display: block;
 		outline: none;
 		-webkit-box-flex: 1;
@@ -57,19 +57,19 @@
 		flex: 1
 	}
 
-	.terminusjs-ps {
+	.terminaljs-ps {
 		margin-right: 5px;
 	}
 
-	.terminusjs-output {
+	.terminaljs-output {
 		clear: both;
 
-		.terminusjs-output-line {
+		.terminaljs-output-line {
 			height: 0;
 			overflow: hidden;
 		}
 
-		.terminusjs-output-line.animate {
+		.terminaljs-output-line.animate {
 			-webkit-transition: height @transitionTime ease-in-out;
 			-moz-transition: height @transitionTime ease-in-out;
 			-ms-transition: height @transitionTime ease-in-out;
@@ -78,7 +78,7 @@
 		}
 
 
-		.terminusjs-output-line.terminusjs-userinput {
+		.terminaljs-output-line.terminaljs-userinput {
 			-webkit-transition: none !important;
 			-moz-transition: none !important;
 			-ms-transition: none !important;

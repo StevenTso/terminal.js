@@ -1,5 +1,5 @@
 /**
- * Copyright © 2012 Ramón Lamana
+ * Copyright © 2014 Steven Tso
  */
  
 define(['io/inputstream', 'io/outputstream'], function(InputStream, OutputStream) {

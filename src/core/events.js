@@ -1,6 +1,6 @@
 /**
- * Terminus.js
- * Copyright © 2012 Ramón Lamana
+ * terminal.js
+ * Copyright © 2014 Steven Tso
  */
 define(function() {
 	'use strict';

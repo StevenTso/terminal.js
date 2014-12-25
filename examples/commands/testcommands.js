@@ -1,6 +1,5 @@
 /**
- * Terminus.js example commands
- * Copyright © 2012 Ramón Lamana
+ * terminal.js example commands
  */
 (function(global) {
 

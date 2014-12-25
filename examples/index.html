@@ -6,12 +6,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Terminus.js</title>
+        <title>terminal.js</title>
         <meta name="viewport" content="width=device-width">
 
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css' />
-		<link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css' />
-		<link href='../build/terminus.css' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+
+		<link href='../build/terminal.css' rel='stylesheet' type='text/css' />
 		<style type="text/css">
 			html {
 				height: 100%;
@@ -26,7 +26,7 @@
 			}
 
 			#terminal {
-				font-family: 'Ubuntu Mono', monospace;
+				font-family: 'Droid Sans Mono';
 				font-weight: 400;
 				color: #ddd;
 
@@ -34,7 +34,7 @@
 			}
 
 			#terminal .identity {
-				font-family: 'Arvo', serif;
+				font-family: 'Droid Sans Mono';
 				font-style: italic;
 				padding: 0 0 10px 0;
 				margin: 0;
@@ -58,22 +58,17 @@
 		<![endif]-->
 
 		<div id="terminal"></div>
-		<script type="text/javascript" src="../build/terminus.min.js"></script>
+		<script type="text/javascript" src="../build/terminal.min.js"></script>
 
 		<!-- Example commands -->
 		<script type="text/javascript" src="commands/testcommands.js"></script>
 
-		<!-- Super Shape commands example -->
-		<script type="text/javascript" src="vendor/three.js"></script>
-		<script type="text/javascript" src="vendor/supertags.js"></script>
-		<script type="text/javascript" src="commands/shapecommands.js"></script>
-
 		<script type="text/javascript">
-			var terminus = new Terminus('#terminal', {
-				welcome: "<div class='identity'><img src='images/logo.png' /><h1>Terminus.js</h1> "+Terminus.version+"</div>Copyright 2012 Ramón Lamana.<br/>Press <span style='color:green'>&lt; tab &gt;</span> to see a list of available commands."
+			var terminal = new terminal('#terminal', {
+				welcome: "<div class='identity'><h1>terminal.js</h1> "+terminal.version+"</div>"
 			});
 
-			terminus.shell.include([TestCommands, ShapeCommands, {
+			terminal.shell.include([TestCommands, {
 				hello: function() {
 					this.write('<span style="color:blue">Hello World!</span>', 'web');
 					this.exit(0);

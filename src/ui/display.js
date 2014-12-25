@@ -1,6 +1,6 @@
 /**
- * Terminus.js
- * Copyright © 2012 Ramón Lamana
+ * terminal.js
+ * Copyright © 2014 Steven Tso
  */
 define(function(require) {
 
@@ -37,7 +37,7 @@ define(function(require) {
 
 		// Create DOM elements structure
 		this.$el = element;
-		Util.Styles.addClass(this.$el, 'terminusjs');
+		Util.Styles.addClass(this.$el, 'terminaljs');
 
 		// Create DOM output element
 		this.output = new Output();
@@ -86,7 +86,7 @@ define(function(require) {
 		_currentInput: null,
 
 		settings: {
-			welcome: '<p>Terminus.js<br/>Copyright 2011-2013 Ramón Lamana.</p>'
+			welcome: '<p>terminal.js<br/>.</p>'
 		},
 
 		focus: function(){

@@ -1,6 +1,6 @@
 /**
- * Terminus.js
- * Copyright © 2012 Ramón Lamana
+ * terminal.js
+ * Copyright © 2014 Steven Tso
  */
 define(function(require) {
 
@@ -16,7 +16,7 @@ define(function(require) {
 	 */
 	var Output = function() {
 		this.element = document.createElement('div');
-		this.element.className = 'terminusjs-output';
+		this.element.className = 'terminaljs-output';
 	};
 
 	Output.prototype = {
@@ -30,13 +30,13 @@ define(function(require) {
 			target = target || 'stdout';
 			switch(target) {
 			case 'stdout':
-				output = this._print(Util.String.htmlEntities(content).replace(/\n/g, '<br/>'), 'terminusjs-stdout');
+				output = this._print(Util.String.htmlEntities(content).replace(/\n/g, '<br/>'), 'terminaljs-stdout');
 				break;
 			case 'stderr':
-				output = this._print(Util.String.htmlEntities(content).replace(/\n/g, '<br/>'), 'terminusjs-stderr');
+				output = this._print(Util.String.htmlEntities(content).replace(/\n/g, '<br/>'), 'terminaljs-stderr');
 				break;
 			case 'web':
-				output = this._print(content, 'terminusjs-web');
+				output = this._print(content, 'terminaljs-web');
 				break;
 			}
 

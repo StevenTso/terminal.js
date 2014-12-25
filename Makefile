@@ -1,7 +1,7 @@
 # Set the source directory
 srcdir = src/
 builddir = build/
-buildname = terminus
+buildname = terminal
 
 lessfiles = $(wildcard src/ui/css/*.less)
 cssfile = ${builddir}/${buildname}.css

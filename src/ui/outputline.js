@@ -1,6 +1,6 @@
 /**
- * Terminus.js
- * Copyright © 2012 Ramón Lamana
+ * terminal.js
+ * Copyright © 2014 Steven Tso
  */
 define(function(require) {
 
@@ -17,11 +17,11 @@ define(function(require) {
 	 */
 	var OutputLine = function() {
 		var outputContent, outputLine = this.element = document.createElement('div');
-		outputLine.className = 'terminusjs-output-line';
+		outputLine.className = 'terminaljs-output-line';
 		Util.Styles.addClass(outputLine, 'animate');
 
 		outputContent = this.outputContent = document.createElement('div');
-		outputContent.className = 'terminusjs-output-content';
+		outputContent.className = 'terminaljs-output-content';
 		outputLine.appendChild(outputContent);
 
 		// When new output is generated, always scroll to bottom
